@@ -28,7 +28,7 @@ export const authOptions: NextAuthOptions = {
             name: "credentials",
             credentials: {
                 email: { label: "email", type: "email", placeholder: "" },
-                password: { label: "password", type: "password", placeholder: "" },
+                password: { label: "password", type: "password", placeholder: "" }
             },
             async authorize(credentials, req) {
                 if (!credentials?.email || !credentials?.password) throw new Error("Credencial invalida!");
@@ -49,6 +49,7 @@ export const authOptions: NextAuthOptions = {
                     id: user.id,
                     name: user.name || "",
                     email: user.email || "",
+                    image: user.image
                 }
             }
         })

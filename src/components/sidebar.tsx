@@ -50,7 +50,7 @@ const SideBar = () => {
                                     />
                                 </div>
                             ) : (
-                                <p className={styles.name}>{data?.user.name[0]}</p>
+                                <p className={styles.name}>{data?.user?.name?.charAt(0)}</p>
                             )
                         }
                         <h2>{data?.user?.name}</h2>
