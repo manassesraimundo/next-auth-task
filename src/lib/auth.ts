@@ -8,7 +8,7 @@ import bcrypt from 'bcrypt'
 import { db } from "@/lib/db";
 
 export const authOptions: NextAuthOptions = {
-    adapter: PrismaAdapter(db),
+    // adapter: PrismaAdapter(db),
     secret: process.env.NEXTAUTH_SECRET,
     pages: {
         signIn: "/login"
@@ -31,7 +31,7 @@ export const authOptions: NextAuthOptions = {
                 password: { label: "password", type: "password", placeholder: "" },
             },
             async authorize(credentials, req) {
-                if (!credentials?.email || !credentials.password) throw new Error("Credencial invalida!");
+                if (!credentials?.email || !credentials?.password) throw new Error("Credencial invalida!");
 
                 const user = await db.user.findUnique({
                     where: {
