@@ -86,7 +86,7 @@ const FormLogin = () => {
             {errors.password && <span className={styles.error}>{errors.password}</span>}
 
             <Button
-                laber="Entrar" 
+                laber="Entrar"
                 type="submit"
                 logn
                 disabled={isPending}
@@ -102,17 +102,17 @@ const FormLogin = () => {
                 )
             }
 
-            <div className={styles.buttonLoginGoogle}>
-                {
-                    !isPending && (
+            {
+                !isPending && (
+                    <div className={styles.buttonLoginGoogle}>
                         <button onClick={() => signIn('google')} type="button" className={styles.btnGoogle}>
                             <FaGoogle size={24} color="#4285F4" />
                             <span>Login com o Google</span>
                             <MdLogin size={24} color="#000" />
                         </button>
-                    )
-                }
-            </div>     
+                    </div>
+                )
+            }
         </form>
     )
 }
