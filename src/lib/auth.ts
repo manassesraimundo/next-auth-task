@@ -2,13 +2,13 @@ import { NextAuthOptions } from "next-auth";
 import CredentialProvider from "next-auth/providers/credentials";
 import GoogleProvider from 'next-auth/providers/google';
 
-import { PrismaAdapter } from "@auth/prisma-adapter";
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
 
 import bcrypt from 'bcrypt'
 import { db } from "@/lib/db";
 
 export const authOptions: NextAuthOptions = {
-    // adapter: PrismaAdapter(db),
+    adapter: PrismaAdapter(db),
     secret: process.env.NEXTAUTH_SECRET,
     pages: {
         signIn: "/login"
