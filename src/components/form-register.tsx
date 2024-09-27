@@ -47,7 +47,7 @@ const FormRegister = () => {
         setErrors({});
 
         startTransition(async () => {
-            await fetch('http://localhost:3000/api/user/create-user', {
+            await fetch('/api/user/create-user', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
