@@ -1,0 +1,88 @@
+.containerCard {
+    max-width: 280px;
+    background-color: rgba(0, 0, 0, 0.645);
+    padding: 16px;
+    border-radius: 8px;
+    height: 230px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerCard h2 {
+    font-size: larger;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+.containerCard p {
+    margin-bottom: 24px;
+    max-height: 66px; 
+    overflow: hidden; 
+    position: relative;
+    line-height: 1.5em; 
+    max-lines: 3; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; 
+    white-space: normal;
+    letter-spacing: 1px; 
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.concluido {
+    color: #fff;
+    padding: 12px 8px;
+    border-radius: 16px;
+    width: 110px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background-color .5s;
+}
+
+.concluido:hover {
+    transform: scale(1.05);
+}
+
+.buttons div {
+    display: flex;
+    gap: 12px;
+    width: 110px;
+    justify-content: flex-end;
+}
+
+.buttons div .edit {
+    background-color: #000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttons div .edit:hover {
+    transform: scale(1.07);
+}
+
+.buttons div .delete {
+    background-color: #000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttons div .delete:hover {
+    transform: scale(1.07);
+}
+@media screen and (max-width: 850px) {
+    /* .containerCard {
+       flex: 1;
+    } */
+}

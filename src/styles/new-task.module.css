@@ -1,0 +1,124 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .8s all;
+}
+
+.form {
+    width: 570px;
+    height: 650px;
+    background-color: #181818;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    position: relative;
+    animation: modal .4s alternate;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.headerModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form h2 {
+    text-align: left;
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 24px;
+}
+
+.form div {
+    width: 100%;
+    margin: 12px 24px;
+}
+
+.form .divTitle input {
+    width: 100%;
+    padding: 14px 14px;
+    border-radius: 12px;
+    font-size: 16px;
+    outline-color: rgba(0, 128, 255, 0.766);
+    background-color: rgba(0, 0, 0, 0.781);
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.form div textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    resize: none;
+    padding: 14px 14px;
+    font-size: 16px;
+    outline-color: rgba(0, 128, 255, 0.766);
+    background-color: rgba(0, 0, 0, 0.781);
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.form .checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form div .Add {
+    background-color: rgb(9, 58, 235);
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 14px 12px;
+    width: 130px;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    cursor: pointer;
+    transition: .5s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.form div .Add:hover {
+    background-color: rgb(0, 35, 160);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        padding: 12px;
+    }
+
+    .form {
+        width: 90%;
+    }
+}

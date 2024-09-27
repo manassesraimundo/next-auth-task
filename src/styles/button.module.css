@@ -1,0 +1,39 @@
+.divButton {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    transition: border-color 0.3s ease;
+    margin-bottom: 12px;
+    margin-top: 44px;
+    border-radius: 8px;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 93, 172, 0.905);
+    color: #fff;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    transition: .3s;
+}
+
+.button span {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: rgba(6, 81, 156, 0.766);
+}
+
+.divButton:hover {
+    border-color: rgba(184, 182, 182, 0.549);
+}

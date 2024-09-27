@@ -1,0 +1,53 @@
+.option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.option > span {
+    border-top: 1px solid #eeeeee7e;
+    width: 100%;
+}
+
+.buttonLoginGoogle {
+    border: 1px solid transparent;
+    width: 100%;
+    margin-bottom: 24px;
+    height: 48px;
+    border-radius: 6px;
+}
+
+.buttonLoginGoogle > .btnGoogle {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid rgb(77, 77, 103);
+    background-color: #cecece; 
+    transition: .3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 700;
+}
+
+.buttonLoginGoogle > .btnGoogle:hover {
+    background-color: #fff;
+}
+
+.buttonLoginGoogle:hover {
+    border-color: rgba(184, 182, 182, 0.549);
+}
+
+.error {
+    color: rgba(209, 24, 24, 0.663);
+    font-size: 12px;
+    margin-top: 4px;
+}

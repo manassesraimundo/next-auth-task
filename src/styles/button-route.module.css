@@ -1,0 +1,25 @@
+.routes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.routes a {
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.routes a:hover {
+    background-color: rgba(88, 148, 150, 0.2);
+    border-right: 3px solid #ffffffd6;
+}
+
+.activeLink {
+    background-color: rgba(88, 148, 150, 0.638);
+    border-right: 3px solid #ffffffd6;
+}

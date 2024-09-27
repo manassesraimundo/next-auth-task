@@ -1,0 +1,48 @@
+.containerlistTasks {
+    width: 100%;
+}
+
+.cardFlex {
+    margin-bottom: 24px;
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 14px;
+    padding: 0 12px;
+}
+
+.btnAddTask {
+    max-width: 280px;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0.645);
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    border-style: dashed;
+    cursor: pointer;
+    flex: 1 0 280px;
+    transition: .4s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.btnAddTask:hover {
+    background-color: #100e0ee4;
+}
+
+
+@media screen and (max-width: 850px) {
+    .cardFlex {
+        justify-content: center;
+    }
+
+    .btnAddTask {
+        display: none;
+    }
+}
