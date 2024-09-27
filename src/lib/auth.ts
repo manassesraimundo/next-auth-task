@@ -35,7 +35,7 @@ export const authOptions: NextAuthOptions = {
 
                 const user = await db.user.findUnique({
                     where: {
-                        email: credentials?.email as string
+                        email: credentials?.email
                     }
                 });
 
@@ -47,9 +47,8 @@ export const authOptions: NextAuthOptions = {
 
                 return {
                     id: user.id,
-                    name: user.name || '',
-                    email: user.email || '',
-                    image: user.image || ''
+                    name: user.name || "",
+                    email: user.email || "",
                 }
             }
         })
